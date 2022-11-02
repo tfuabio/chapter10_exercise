@@ -65,3 +65,23 @@ footer {
   width: 100%;
   height: 50px;
 }
+
+/*レスポンシブ対応*/
+@media screen and (max-width: 768px) {
+  /*main要素の調整*/
+  main {
+    display: block; /*flexを解除して縦並びにする*/
+    width: 100%; /*画面幅100%*/
+  }
+
+  /*stepの調整*/
+  .step {
+    width: 90%; /*画面幅90%*/
+    margin: 0 5%; /*左右にマージンを入れ中央寄せ*/
+  }
+
+  /*2番目のstepの調整*/
+  .step:nth-child(2) {
+    margin: 20px 5%; /*上と下にマージンを入れる*/
+  }
+}
